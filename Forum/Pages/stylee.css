@@ -1,0 +1,146 @@
+html{
+	height: 100%;
+	background: url('fon.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+#navbar, #navbar ul{ 
+margin: 0; 
+list-style-type: none; 
+} 
+#navbar { 
+height: 35px; 
+margin:0 0 0 0; 
+padding:1% 0 1% 0; 
+background-color:rgba(75, 0, 94,0.6); 
+} 
+#navbar li { 
+float: left; 
+position: relative; 
+height: 100%; 
+border-right: 1px solid #ffffff; 
+} 
+#navbar li a { 
+display: block; 
+width: 100px; 
+color: #fff; 
+text-decoration: none; 
+text-align: center; 
+font-size:20px; 
+font-family:Century Gothic; 
+} 
+#navbar li:hover { background-color: #8A2BE2; }
+
+.block_item{
+	background-color: #19003a;
+	margin: 1% 10% 1% 10%;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.block_title{
+	/*letter-spacing: 2px;*/ 
+	color:white;
+	margin: 5% 2% 2% 2%; /* 1% 16% 1% 18% верх право низ лево*/
+	font-size:14pt;
+	font-family:Century Gothic;
+	/*background-color:rgba(12, 3, 28,0.5); /* red green blue opacity */
+	top: 20px;
+	background-color: #330066;
+    padding: 10px 10px 10px 30px;
+    position: relative; /* оставить важно(!)*/
+	line-height: 1.6;
+	cursor: pointer;	
+}
+
+.block_title:before,
+.block_title:after {
+	content:' ';
+	width: 10px;
+	height: 1px;
+	background-color: #ec65fd ;
+	position: absolute;
+	top: 20px;
+	margin-left: 8px;	
+	transition: all 0.3s ease 0s;
+}
+
+.block_title:before{
+	transform: rotate(40deg);
+	left: 0;
+}
+
+.block_title:after{
+	transform: rotate(-40deg);
+	left: 8px ;
+}
+
+.block_title.active:before,
+.block_title.active:after {
+	background-color: #ec65fd ;
+}
+
+.block_title.active:before:{
+	transform: rotate(-40deg);
+}
+
+.block_title.active:after:{
+	transform: rotate(40deg);
+}
+
+.block_text {
+	display: none;
+	/*padding: 10px 0px 0px 0px;*/
+	color:white;
+	margin-left:2%;
+	margin-right:2%;
+	margin-top:5%;
+	bottom:20px;
+	font-size:13pt;
+	font-family:Century Gothic;
+	/*background-color:rgba(12, 3, 28,0.5); /* red green blue opacity */
+	background-color: #270053;
+    padding: 20px;
+	line-height: 1.6;
+}
+.text_title{
+	letter-spacing: 32px;
+	color: #ec65fd;
+	text-align:center; 
+	font-size: 72px;
+	font-family:ChinaCyr;
+    padding: 8px;
+	line-height: 1.6;
+	margin-top: 7%
+	
+}
+
+@media screen and (min-width:240px) and (max-width:850px) { 
+
+#navbar { 
+height: 25px; 
+} 
+#navbar li { 
+width: 23%;
+} 
+#navbar li a { 
+padding-left: 3px;
+font-size:13px; 
+font-family:Century Gothic; 
+text-align: left; 
+} 
+.block_item{
+	margin: 1% 0 1% 0;
+}
+
+.block_title{
+	font-size:12pt;
+}
+
+.block_text {
+	font-size:11pt;
+}
+.text_title{
+	letter-spacing: 3px;
+	font-size: 24px;
+}
+}
