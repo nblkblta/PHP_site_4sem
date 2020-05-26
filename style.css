@@ -1,0 +1,55 @@
+
+p{
+	padding: 0;
+	margin: 0;
+	color: unset;
+	
+}
+body{
+	background: url("China2.png") /*no-repeat center center fixed*/;
+	background-size: cover;
+	background-attachment: fixed; 
+	background-repeat: repeat-y; 
+
+}
+.text_1{
+	text-align: center;
+	font-size: 78pt;
+	font-family: Segoe Print; 
+	color: #fffffe;
+	margin-top: 9%;
+	
+}
+a{
+	color: unset;
+	text-decoration: none;
+}
+
+.text_2{
+	text-align: center;
+	font-size: 30pt;
+	font-family: Segoe Print; 
+	color: #b8c1ec;
+}
+
+.text_3{
+	text-align: center;
+	font-size: 22pt;
+	font-family: Segoe Print; 
+	color: #b8c1ec;
+}
+.but1{
+	padding: 8px;
+	background: #eebbc3;
+	color: #2d334a;
+	border-radius: 16px;
+	font-family: Segoe Print;
+	font-size: 16pt;
+	font-weight: bold;
+	border: 2px solid #2d334a;
+	cursor: pointer;
+}
+.b1{
+	margin-top: 1%;
+	text-align: center;
+}

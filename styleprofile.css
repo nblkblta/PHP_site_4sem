@@ -1,0 +1,98 @@
+body{
+	/*background: url("China2.png") /*no-repeat center center fixed*/;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	background-attachment: fixed; 
+	background-repeat: repeat-y; 
+	background-color: #232946;
+}
+
+hr {
+    border: 1px solid #fffffe;
+    margin-bottom: 30px;
+}
+
+button {
+	padding: 8px;
+	background: #eebbc3;
+	color: #2d334a;
+	border-radius: 16px;
+	font-family: Segoe Print;
+	font-size: 12pt;
+	font-weight: bold;
+	border: 2px solid #2d334a;
+	cursor: pointer;
+	margin:20px 0 0 43%;
+}
+
+.text_2{
+	margin:0;
+	padding: 0;
+	text-align: center;
+	font-size: 24pt;
+	font-family: Segoe Print; 
+	color: #b8c1ec;
+}
+.text_3{
+	margin: 10px 10px 22px 250px; /*верх право низ лево*/
+	padding: 0;
+	text-align: center;
+	font-size: 24pt;
+	font-family: Segoe Print; 
+	color: #fffffe;
+}
+.text_4{
+
+	margin: 10px 10px 15px 38%; /*верх право низ лево*/
+	padding: 0;
+	text-align: left;
+	font-size: 22pt;
+	font-family: Segoe Print; 
+	color: #b8c1ec;
+}
+
+.data{
+	text-decoration: none;
+	margin-right: 15px;
+	margin-left:15px ;
+	color: #fffffe;
+	font-style:  normal;
+
+}
+
+.bb{
+	margin-right: 15px;
+	margin-left:35px ;
+}
+.cont{
+	margin: 20px;
+	border-radius: 100px; /* Радиус скругления */ 
+    box-shadow: 0 0 0 2px white, 0 0 13px #333; /* Параметры теней */
+}
+
+.header {
+	float: center;
+ display: inline-block;
+ align-items: center;
+ vertical-align: top;
+}
+.blocks{
+	display: inline-block;
+	text-align: center;
+}
+.num{
+	font-size: 30pt;
+	font-family: Segoe Print; 
+}
+
+.block{
+	margin: 30px 10px 22px 10px; /*верх право низ лево*/
+	float: left;
+	font-size: 16pt;
+	font-family: Segoe Print; 
+	width: 160px;
+	height: 100px;
+	color: #121629;
+	background-color: #b8c1ec;
+}
