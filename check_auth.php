@@ -5,6 +5,7 @@
 	include 'db.php';
 	$result = $mysql->query("SELECT * FROM `users` WHERE `login`='$login' AND `password`='$password'");
 	$mysql->close();
+	//ppppp
 	$user = $result->fetch_assoc();
 	if (count($user)==0) {
 		echo "Такого пользователя не существует";
