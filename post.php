@@ -43,12 +43,13 @@
 			<input type=button class="but" id="send" value="Добавить комментарий"></input>
 			<div id='message' style='color: white'></div>
 		</form>
-		
 		</br>
 	<?endif;?>
+	<input type="hidden" name="id_post" id='id_post"' value=<?echo $_GET['id'] ?>>
+
 	<div id='comments'></div>
 	<script src="js/comments.js"></script>
-	
+
 </body>
 <? 
 $mysql->close();
