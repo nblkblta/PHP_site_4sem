@@ -32,5 +32,5 @@ while(($row=$result->fetch_assoc())!=false):
 <?
 endwhile;
 ?>
-<script src="del_com.js"></script>
+<script src="js/del_com.js"></script>
 </body>

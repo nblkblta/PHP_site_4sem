@@ -16,7 +16,7 @@
 <html>
 <head>
 	<title>Профиль</title>
-	<link rel="stylesheet" href="styleprofile.css">	
+	<link rel="stylesheet" href="css/styleprofile.css">	
 </head>
 
 <body>

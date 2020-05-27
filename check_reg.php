@@ -42,7 +42,7 @@
 	}
 	$password = md5($password."dsghshssrhheee");
 	
-	$mysql->query("INSERT INTO `users` (`login`, `password`, `name`, `status`, `email`) VALUES ('$login','$password','$name',0,'$email')");
+	$mysql->query("INSERT INTO `users` (`login`, `password`, `name`, `status`, `email`, `avatar`) VALUES ('$login','$password','$name',0,'$email','Image/ava.png')");
 	$mysql->close();
 	$base_url = "site/";
 	echo "Вам на почту отправлено письмо с подтверждением регистрации";

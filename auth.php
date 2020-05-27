@@ -4,7 +4,7 @@ include 'menu.php';?>
 
 <head>
 	
-	<link rel="stylesheet" href="reg.css" >
+	<link rel="stylesheet" href="css/reg.css" >
 </head>
 
 <body>

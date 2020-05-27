@@ -34,4 +34,6 @@ while(($row=$result->fetch_assoc())!=false):
 <?
 endwhile;
 ?>
+<?
 $mysql->close();
+?>

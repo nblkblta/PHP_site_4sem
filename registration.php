@@ -3,7 +3,7 @@ include 'header.php';
 include 'menu.php';?>
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="reg.css" >
+	<link rel="stylesheet" href="css/reg.css" >
 </head>
 <body>
 	<div class="regist" ></div>
@@ -16,6 +16,6 @@ include 'menu.php';?>
 		<input type=button class="but" id="send" value="Зарегестрироваться"></input>
 	</form>
 	<div id='message' style='color: white'></div>
-	<script src="reg.js"></script>
+	<script src="js/reg.js"></script>
 </body>
 </html>

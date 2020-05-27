@@ -10,7 +10,7 @@
 	include 'menu.php';
 	?>
 <head>
-	<link rel="stylesheet" href="Blog/blog.css">	
+	<link rel="stylesheet" href="css/blog.css">	
 </head>
 <body>
 	<div class='blog'>
@@ -47,9 +47,9 @@
 		</br>
 	<?endif;?>
 	<div id='comments'></div>
-	<script src="comments.js"></script>
+	<script src="js/comments.js"></script>
 	
 </body>
 <? 
-	$mysql->close();
-	?>
+$mysql->close();
+?>

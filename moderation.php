@@ -9,5 +9,5 @@ include 'menu.php';
 	<div id="lastposts">
 		
 	</div>
-	<script src="unmod_post.js"></script>
+	<script src="js/unmod_post.js"></script>
 </body>

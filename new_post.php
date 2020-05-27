@@ -3,7 +3,7 @@ include 'header.php';
 include 'menu.php';
 ?>
 <head>
-	<link rel="stylesheet" href="reg.css" >
+	<link rel="stylesheet" href="css/reg.css" >
 </head>
 <body>
 	<div class="container mt-4" >	
@@ -16,7 +16,7 @@ include 'menu.php';
 			<div id='message' style='color: white'></div>
 		</form>
 	</div>
-	<script src="new_post.js"></script>
+	<script src="js/new_post.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
