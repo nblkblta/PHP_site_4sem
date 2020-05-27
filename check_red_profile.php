@@ -24,7 +24,7 @@ if (mb_strlen($lastname) < 3 || mb_strlen($lastname) > 50)
 
 $birthday = $_POST['birthday']; 
 if(!($birthday=='')){ 
-	if ($birthday>date(time()-189216000)){
+	if ($birthday>date("d-m-Y",time()-(60*60*24*365*14))){
 		echo 'Некорректная дата рождения';
 		$mysql->close();
 		exit();
