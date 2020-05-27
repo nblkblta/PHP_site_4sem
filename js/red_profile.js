@@ -1,11 +1,12 @@
 
 window.onload = function(){
+	var inp_id=document.querySelector('input[name=id]');
 	var inp_name=document.querySelector('input[name=name]');
 	var inp_lastname = document.querySelector('input[name=lastname]');
 	var inp_birthday = document.querySelector('input[name=birthday]');
 	var inp_image = document.querySelector('input[name=image]');
 		document.querySelector('#send').onclick = function(){
-			var params = 'name='+inp_name.value+'&'+'lastname='+inp_lastname.value+'&'+'birthday='+inp_birthday.value+'&'+'image='+inp_image.value;
+			var params = 'name='+inp_name.value+'&'+'lastname='+inp_lastname.value+'&'+'birthday='+inp_birthday.value+'&'+'image='+inp_image.value+'&'+'id='+inp_id.value;
 			ajaxPost(params);
 		}
 

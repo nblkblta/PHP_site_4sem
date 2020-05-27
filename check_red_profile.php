@@ -9,7 +9,8 @@ if (mb_strlen($name) < 3 || mb_strlen($name) > 50){
 	$mysql->close();
 	exit();
 } else {
-	$mysql->query("UPDATE users SET name='$name' WHERE id='$id'"); 
+	print_r("имя");
+	$mysql->query("UPDATE `users` SET `name`='$name' WHERE `users`.`id`='$id'"); 
 } 
 
 $lastname = filter_var(trim($_POST['lastname'])); 
@@ -19,7 +20,8 @@ if (mb_strlen($lastname) < 3 || mb_strlen($lastname) > 50)
 	$mysql->close();
 	exit();
 } else {
-	$mysql->query("UPDATE users SET lastname='$lastname' WHERE id='$id'"); 
+	print_r("фамилия");
+	print_r($mysql->query("UPDATE `users` SET `lastname`='$lastname' WHERE `users`.`id`='$id'")); 
 } 
 
 $birthday = $_POST['birthday']; 
@@ -29,7 +31,8 @@ if(!($birthday=='')){
 		$mysql->close();
 		exit();
 	}
-	$mysql->query("UPDATE users SET birthday='$birthday' WHERE id='$id'"); 
+	print_r("Дата рождения");
+	$mysql->query("UPDATE `users` SET `birthday` = '$birthday' WHERE `users`.`id` = '$id'"); 
 } else {
 	echo 'Некорректная дата рождения';
 	$mysql->close();
@@ -40,7 +43,8 @@ $image = $_POST['image'];
 if(!($image=='')){ 
 	$path = 'Image/'.time(); 
 	move_uploaded_file($_FILES['image']['tmp_name'], $path); 
-	$mysql->query("UPDATE users SET avatar='$path' WHERE id='$id'");
+	print_r("Фото");
+	$mysql->query("UPDATE `users` SET `avatar`='$path' WHERE `users`.`id`='$id'");
 } 
 echo "Изменено успешно";
 $mysql->close(); 
