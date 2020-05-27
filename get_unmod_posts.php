@@ -27,7 +27,8 @@ while(($row=$result->fetch_assoc())!=false):
 			<p class="tp"><?echo $row['text'];?></p>
 		</div>
 		<div>			
-			<button class="but" onclick=<? echo "location.href='http://site/change_post_stat.php?id=".$row['id']."'"?>>Опубликовать</button>
+			<button class="but" onclick="var params ='id_post='+<?echo ''.$row['id'] ?>;
+		ajaxPubl(params);">Опубликовать</button>
 		</div>
 	</div>
 	<?echo "<br/>";?>

@@ -17,4 +17,5 @@
 	move_uploaded_file($_FILES['image']['tmp_name'], $path);
 	$mysql->query("INSERT INTO `posts` (`id_user`, `title`, `text`,`date`, `image`, `status`) VALUES ('$id_user','$title','$text','$date','$path', '0')");
 	$mysql->close();
+	echo "Пост успешно добавлен";
  ?>

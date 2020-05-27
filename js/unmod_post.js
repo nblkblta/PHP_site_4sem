@@ -23,3 +23,10 @@ setInterval(()=> {
 	, 2000);
 	
 }
+
+function ajaxPubl(params){
+	var request = new XMLHttpRequest();
+	request.open('POST','change_post_stat.php');
+	request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
+	request.send(params);
+}

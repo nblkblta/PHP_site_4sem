@@ -16,6 +16,8 @@ function ajaxPost(params){
 		request.onreadystatechange = function(){
 		if(request.readyState == 4) {
 			document.querySelector('#message').innerHTML = request.responseText;
+			const form = document.getElementById("form");
+			form.reset();
 		}
 	}
 	request.open('POST','check_new_post.php');

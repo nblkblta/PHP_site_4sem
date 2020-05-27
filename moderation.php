@@ -3,7 +3,7 @@ include 'header.php';
 include 'menu.php';
 ?>
 <head>
-	<link rel="stylesheet" href="Blog/blog.css">
+	<link rel="stylesheet" href="css/blog.css">
 </head>
 <body>
 	<div id="lastposts">
