@@ -13,7 +13,4 @@
 	include 'db.php';
 	$mysql->query("INSERT INTO `comments` (`id_post`, `name`, `text`, `date`, `id_user`) VALUES ('$id_post','$name','$text','$date','$id_user')");
 	$mysql->close();
-	
-	include 'header.php';
-	include 'menu.php';
 	?>

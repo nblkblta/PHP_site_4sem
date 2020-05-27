@@ -10,5 +10,5 @@ include 'menu.php';
 		
 	</div>
 	<script src="js/lastpost.js"></script>
-	<script src="js/del_com.js"></script>
+	
 </body>
