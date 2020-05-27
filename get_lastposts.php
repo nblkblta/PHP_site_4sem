@@ -14,6 +14,9 @@ while(($row=$result->fetch_assoc())!=false):
 			$r=$res->fetch_assoc();
 			echo $r['name'];?>
 		</div>
+		<div class='user_foto'>
+		<img  src=<?echo $r['avatar'];?>>
+		</div> 
 
 		<div class='blogdate'>
 			<?echo $row['date'];?>
@@ -33,4 +36,6 @@ while(($row=$result->fetch_assoc())!=false):
 <?
 endwhile;
 ?>
+<?
 $mysql->close();
+?>
