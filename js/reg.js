@@ -14,6 +14,7 @@ window.onload = function(){
 }
 
 function ajaxPost(params){
+	
 	var request = new XMLHttpRequest();
 
 		request.onreadystatechange = function(){
