@@ -3,7 +3,7 @@
 }
 
 html {
-	background: linear-gradient( rgba(9, 31, 51, 0.4), rgba(9, 31, 51, 0.0) ), url('image/fon.jpg');
+	background: linear-gradient( rgba(9, 31, 51, 0.4), rgba(9, 31, 51, 0.0) ), url('../Image/fon.jpg');
 	background-repeat: repeat-y;
 	background-size: 100%;
 	background-attachment: local;
