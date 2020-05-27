@@ -29,6 +29,8 @@ while(($row=$result->fetch_assoc())!=false):
 		<div>			
 			<button class="but" onclick="var params ='id_post='+<?echo ''.$row['id'] ?>;
 		ajaxPubl(params);">Опубликовать</button>
+		<button class="but" onclick="var params ='id_post='+<?echo ''.$row['id'] ?>;
+		ajaxDePubl(params);">Удалить</button>
 		</div>
 	</div>
 	<?echo "<br/>";?>

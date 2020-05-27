@@ -30,3 +30,10 @@ function ajaxPubl(params){
 	request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
 	request.send(params);
 }
+
+function ajaxDePubl(params){
+	var request = new XMLHttpRequest();
+	request.open('POST','delete_post.php');
+	request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
+	request.send(params);
+}
