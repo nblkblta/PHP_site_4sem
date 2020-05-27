@@ -18,7 +18,7 @@
 		$mysql->close();
 		exit();
 	}
-	if(mb_strlen($email)<1 || mb_strlen($email)>90) {//поискать проверку Email
+	if(mb_strlen($email)<1 || mb_strlen($email)>90) {
 		echo "Недопустимый email";
 		$mysql->close();
 		exit();
