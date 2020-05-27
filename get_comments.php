@@ -23,8 +23,8 @@ while(($row=$result->fetch_assoc())!=false):
 		<button class="but1" type="submit"  ><i class="glyphicon glyphicon-pencil"></i> Редактировать</button>
 		</form>
 		<form style="display: inline-block;" name="red" action="delete_comment.php" method="post">
-  		<input type="hidden" name="id" value=<?echo $row['id'] ?>>
-		<input  class="but1" id='del'  type="button" value="Удалить" ></input>
+		<input  class="but1" id='del' onclick="var params ='id='+<?echo ''.$row['id'] ?>;
+		ajaxDel(params);"  type="button" value="Удалить" ></input>
 		</form>
 	<?endif;?>
 	</div>
@@ -32,5 +32,5 @@ while(($row=$result->fetch_assoc())!=false):
 <?
 endwhile;
 ?>
-<script src="js/del_com.js"></script>
+
 </body>

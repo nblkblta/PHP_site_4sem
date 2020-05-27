@@ -48,6 +48,7 @@
 	<?endif;?>
 	<div id='comments'></div>
 	<script src="js/comments.js"></script>
+	<script src="js/del_com.js"></script>
 	
 </body>
 <? 
