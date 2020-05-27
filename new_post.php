@@ -9,7 +9,7 @@ include 'menu.php';
 	<div class="container mt-4" >	
 		<form name="new_post" id ="form"  method="post" enctype="multipart/form-data">
 			<input type="text" class="form-control" name="title" placeholder="Заголовок"></input><br/>
-			<input type="text" class="form-control" name="text"  placeholder="Текст поста"></input><br/>	
+			<input type="textarea" class="form-control" name="text"  placeholder="Текст поста"></input><br/>	
 			<input type="file" class="form-control" name="image"  placeholder="Фото"></input><br/>	
 			<input type='button' class="but" id="send" value="Добавить"></input>
 			</br>

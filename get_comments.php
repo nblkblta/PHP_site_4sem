@@ -20,7 +20,7 @@ while(($row=$result->fetch_assoc())!=false):
 		<form style="display: inline-block;margin-left: 80%; margin-top: 2%;" name="red" action="redact_comment.php"  method="post">
 		<input type="hidden" name="id_post" value=<?echo $id_post ?>>
   		<input type="hidden" name="id" value=<?echo $row['id'] ?>>
-		<button class="but1" type="submit"  ><i class="glyphicon glyphicon-pencil"></i> Редактировать</button>
+		<button class="but1" type="submit"> Редактировать</button>
 		</form>
 		<form style="display: inline-block;" name="del" action="delete_comment.php" method="post">
 		<input  class="but1" id='del' onclick="var params ='id='+<?echo ''.$row['id'] ?>;
