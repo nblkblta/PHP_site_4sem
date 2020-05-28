@@ -4,7 +4,7 @@
 	$result = $mysql->query("SELECT * FROM `posts` WHERE  `id` ='$id' ");
 	$row=$result->fetch_assoc();
 	$title=$row['title'];
-
+//Комментарий
 	
 	include 'header.php';
 	include 'menu.php';
