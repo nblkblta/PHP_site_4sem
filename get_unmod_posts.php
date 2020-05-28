@@ -2,7 +2,9 @@
 include 'db.php';
 
 $result = $mysql->query("SELECT * FROM `posts` WHERE `status`=0 ORDER BY  `date` DESC ");
-
+if($result->fetch_assoc()==false){
+	echo "<div class='container'>Больше нет постов для модерации</div>";
+}
 
 while(($row=$result->fetch_assoc())!=false):
 ?>

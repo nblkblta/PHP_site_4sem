@@ -6,6 +6,9 @@ include 'menu.php';
 	<link rel="stylesheet" href="css/blog.css">
 </head>
 <body>
+	<div >
+		
+	</div>
 	<div id="lastposts">
 		
 	</div>

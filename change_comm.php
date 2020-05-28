@@ -1,5 +1,4 @@
 <?  include 'db.php';
-
   	$id=$_POST['id'];
   	$id_post = $_POST['id_post'];
   	$text=$_POST['text'];
