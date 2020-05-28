@@ -22,7 +22,7 @@
 <body>
 	<div align="center" style="margin-top: 50px;">
 		<div class="header">
-			<p class="cont"><img src=<?echo $avatar?> ></p>		
+			 <img class="cont" src=<?echo $avatar?> >	
 		</div>
 
 		<div class="header">

@@ -67,8 +67,11 @@ button {
 }
 .cont{
 	margin: 20px;
-	border-radius: 100px; /* Радиус скругления */ 
     box-shadow: 0 0 0 2px white, 0 0 13px #333; /* Параметры теней */
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 .header {
