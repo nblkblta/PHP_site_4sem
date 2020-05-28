@@ -33,6 +33,16 @@ html {
 	margin: 1px 43%;
 }
 
+.cont{
+	margin: 20px;
+    box-shadow: 0 0 0 2px white, 0 0 13px #333; /* Параметры теней */
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
 .but1{
 	padding: 8px;
 	background: #eebbc3;

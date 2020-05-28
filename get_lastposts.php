@@ -15,7 +15,7 @@ while(($row=$result->fetch_assoc())!=false):
 			echo $r['name'];?>
 		</div>
 		<div class='user_foto'>
-		<img  src=<?echo $r['avatar'];?>>
+		<img  class="cont" src=<?echo $r['avatar'];?>>
 		</div> 
 
 		<div class='blogdate'>
