@@ -13,8 +13,8 @@
 	} 
 	$date = date("y.m.d H:i:s") ;
 	$mysql = new mysqli('localhost', 'root', '', 'site');
-	$path = 'Image/'.time().$_FILES['image']['name']; 
-	move_uploaded_file($_FILES['image']['tmp_name'], $path); 
+	$path = 'Image/'.time();
+	move_uploaded_file($_FILES['image']['tmp_name'], $path);
 	$mysql->query("INSERT INTO `posts` (`id_user`, `title`, `text`,`date`, `image`, `status`) VALUES ('$id_user','$title','$text','$date','$path', '0')");
 	$mysql->close();
 	echo "Пост успешно добавлен";

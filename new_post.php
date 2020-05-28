@@ -7,17 +7,16 @@ include 'menu.php';
 </head>
 <body>
 	<div class="container mt-4" >	
-		<form name="new_post" id ="new_post"  method="post" enctype="multipart/form-data">
+		<form name="new_post" id ="form"  method="post" enctype="multipart/form-data">
 			<input type="text" class="form-control" name="title" placeholder="Заголовок"></input><br/>
 			<input type="textarea" class="form-control" name="text"  placeholder="Текст поста"></input><br/>	
-			<input type="file" class="form-control" name="image" id="image" placeholder="Фото"></input><br/>	
+			<input type="file" class="form-control" name="image"  placeholder="Фото"></input><br/>	
 			<input type='button' class="but" id="send" value="Добавить"></input>
 			</br>
 			<div id='message' style='color: white'></div>
 		</form>
 	</div>
 	<script src="js/new_post.js"></script>	
-	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
