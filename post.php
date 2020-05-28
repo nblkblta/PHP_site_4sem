@@ -4,7 +4,7 @@
 	$result = $mysql->query("SELECT * FROM `posts` WHERE  `id` ='$id' ");
 	$row=$result->fetch_assoc();
 	$title=$row['title'];
-//Комментарий
+
 	
 	include 'header.php';
 	include 'menu.php';
@@ -22,6 +22,10 @@
 			echo $r['name'];?>
 		</div>
 
+		<div class='user_foto'>
+		<img  class="cont" src=<?echo $r['avatar'];?>>
+		</div> 
+		
 		<div class='blogdate'>
 			<?echo $row['date'];?>
 		</div>

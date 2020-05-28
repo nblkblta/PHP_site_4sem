@@ -29,7 +29,7 @@ while(($row=$result->fetch_assoc())!=false):
 			<p class="tp"><?echo $row['text'];?></p>
 		</div>
 		<div>			
-			<button class="but" onclick=<? echo "location.href='http://site/post.php?id=".$row['id']."'"?>>Комментарии</button>
+			<button class="but" onclick=<? echo "location.href='http://php/post.php?id=".$row['id']."'"?>>Комментарии</button>
 		</div>
 	</div>
 	<?echo "<br/>";?>
