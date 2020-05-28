@@ -2,7 +2,7 @@
 	include 'db.php';
 	$id_post = $_POST['id_post'];
 	$text = filter_var(trim($_POST['text']));
-	if(mb_strlen($text)<10 || mb_strlen($text)>140) {
+	if(mb_strlen($text)<1 || mb_strlen($text)>140) {
 		echo "Недопустимый размер комментария";
 		$mysql->close();
 		exit();
