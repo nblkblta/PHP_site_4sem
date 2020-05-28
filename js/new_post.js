@@ -1,27 +1,21 @@
-
-window.onload = function(){
-	var inp_title=document.querySelector('input[name=title]');
-	var inp_text = document.querySelector('input[name=text]');
-	var inp_image = document.querySelector('input[name=image]');
-		document.querySelector('#send').onclick = function(){
-			var params = 'title='+inp_title.value+'&'+'text='+inp_text.value+'&'+'image='+inp_image.value;
-			ajaxPost(params);
-		}
-
-}
-
-function ajaxPost(params){
-	var request = new XMLHttpRequest();
-
-		request.onreadystatechange = function(){
-		if(request.readyState == 4) {
-			document.querySelector('#message').innerHTML = request.responseText;
-			const form = document.getElementById("form");
-			form.reset();
-		}
-	}
-	request.open('POST','check_new_post.php');
-	request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
-	request.send(params);
-
-}
+$(document).ready(function()
+	{
+	var $that = $('#new_post');
+    
+    $('#send').click(function(){
+    	formData = new FormData($that.get(0)); 
+    	$.ajax({
+    		url:'check_new_post.php',
+    		type: "POST",
+	    	contentType: false, // важно - убираем форматирование данных по умолчанию
+	     	processData: false, // важно - убираем преобразование строк по умолчанию
+	      	data: formData,
+	      	success: function(text){
+	        	if(text){
+	          		document.querySelector('#message').innerHTML=text;
+	       			}
+	        	}
+     	 	
+    		});
+   		})
+    })

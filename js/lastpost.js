@@ -5,7 +5,7 @@ var request = new XMLHttpRequest();
 			document.querySelector('#lastposts').innerHTML = request.responseText;
 		}
 	}
-	request.open('GET','get_lastposts.php');
+	request.open('GET','get_lastposts.php?mod=1');
 	request.send();
 	setInterval(()=> {
 	var request = new XMLHttpRequest();
@@ -15,6 +15,6 @@ var request = new XMLHttpRequest();
 			document.querySelector('#lastposts').innerHTML = request.responseText;
 		}
 	}
-	request.open('GET','get_lastposts.php');
+	request.open('GET','get_lastposts.php?mod=1');
 	request.send();}
 	, 2000);

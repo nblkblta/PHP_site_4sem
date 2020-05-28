@@ -1,3 +1,4 @@
+var url = 'get_lastposts.php?mod=0';
 window.onload = function(){
 	var request = new XMLHttpRequest();
 
@@ -7,9 +8,9 @@ window.onload = function(){
 			
 		}
 	}
-	request.open('GET','get_unmod_posts.php');
+	request.open('GET',url);
 	request.send();
-setInterval(()=> {
+	setInterval(()=> {
 	var request = new XMLHttpRequest();
 
 	request.onreadystatechange = function(){
@@ -18,7 +19,7 @@ setInterval(()=> {
 			
 		}
 	}
-	request.open('GET','get_unmod_posts.php');
+	request.open('GET',url);
 	request.send();}
 	, 2000);
 	

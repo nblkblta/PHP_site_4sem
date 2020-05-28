@@ -1,7 +1,8 @@
 <?
 include 'db.php';
+$mod = $_GET['mod'];
 
-$result = $mysql->query("SELECT * FROM `posts` WHERE `status`>0 ORDER BY  `date` DESC ");
+$result = $mysql->query("SELECT * FROM `posts` WHERE `status`='$mod' ORDER BY  `date` DESC ");
 
 
 while(($row=$result->fetch_assoc())!=false):
