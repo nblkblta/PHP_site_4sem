@@ -20,6 +20,10 @@ html {
 	border-radius: 0;
 }
 
+.bl{
+	vertical-align: middle;
+
+}
 .but{
 	padding: 8px;
 	margin-top: 5px;
@@ -45,7 +49,6 @@ html {
 .user_foto{
 	float: left;
 	display: inline-block;
-	vertical-align: middle;
 }
 
 
@@ -106,17 +109,17 @@ html {
 
  .blogname{
  	display: inline-block;
- 	font-size:24pt;
+ 	font-size:24pt;	
+ 	float:left;
+ 	margin-left: 30px;
 
- 	margin-right: 75%; 	
- 	vertical-align: middle;
  }
 
  .blogdate{
  	display: inline-block;
- 	font-size:24pt;
+ 	font-size:20pt;
  	float: right;
- 	vertical-align: middle;
+ 	
  }
 
  .tp{
@@ -154,7 +157,7 @@ html {
 }
 
 .blogfoto{
-	margin: 2% auto 0 auto; /*верх право низ лево*/
+	margin: 5% auto 0 auto; /*верх право низ лево*/
 	/*background-color:rgba(87, 35, 176,0.1);*/ 
 	vertical-align: top;
 	height:60%;

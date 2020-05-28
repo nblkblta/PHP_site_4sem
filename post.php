@@ -15,20 +15,22 @@
 <body>
 	<div class='blog'>
 		<?echo $row['title'];?>
-		<div class='blogname'>
+	</br>
+		<div class="bl">
+		<div class='user_foto'>
 			<? $name = $row["id_user"];
 			$res=$mysql->query("SELECT * FROM `users` WHERE `id`='$name'");
-			$r=$res->fetch_assoc();
-			echo $r['name'];?>
-		</div>
-
-		<div class='user_foto'>
-		<img  class="cont" src=<?echo $r['avatar'];?>>
+			$r=$res->fetch_assoc();?>
+			<img  class="cont" src=<?echo $r['avatar'];?>>
 		</div> 
-		
+		<div class='blogname'>
+			<?echo $r['name'];?>
+		</div>
 		<div class='blogdate'>
 			<?echo $row['date'];?>
 		</div>
+	</div>
+
 		<div class="blogfoto">
 			<img  src=<?echo $row['image'];?>>
 		</div>
