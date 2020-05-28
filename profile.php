@@ -9,6 +9,10 @@
 	$lastname = $res['lastname'];
 	$birthday = $res['birthday'];
 	$avatar = $res['avatar'];
+	$res=$mysql->query("SELECT COUNT(*) FROM `posts` WHERE `posts`.`id_user`='$id'")->fetch_assoc();
+	$stat_count=$res['COUNT(*)'];
+	$res=$mysql->query("SELECT COUNT(*) FROM `comments` WHERE `comments`.`id_user`='$id'")->fetch_assoc();
+	$comm_count=$res['COUNT(*)'];
 	$mysql->close();
 
 	?>
@@ -28,8 +32,8 @@
 		<div class="header">
 			<p class="text_2" >Профиль пользователя: <b class="bb"> <?echo $name; ?></b></p>
 			<div class="blocks">
-				<div class="block" ><b class="num">10</b><br> статьи</div>
-				<div class="block" ><b class="num">4</b><br> комментарии</div>			
+				<div class="block" ><b class="num"><?echo $stat_count ?></b><br> статьи</div>
+				<div class="block" ><b class="num"><?echo $comm_count ?></b><br> комментарии</div>			
 			</div>
 			<hr>
 		</div>
