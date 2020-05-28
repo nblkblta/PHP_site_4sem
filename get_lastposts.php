@@ -2,7 +2,7 @@
 include 'db.php';
 
 $result = $mysql->query("SELECT * FROM `posts` WHERE `status`>0 ORDER BY  `date` DESC ");
-
+//
 
 while(($row=$result->fetch_assoc())!=false):
 ?>
