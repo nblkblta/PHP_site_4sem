@@ -20,8 +20,13 @@ html {
 	border-radius: 0;
 }
 
+.bl{
+	vertical-align: middle;
+
+}
 .but{
 	padding: 8px;
+	margin-top: 5px;
 	background: #eebbc3;
 	color: #2d334a;
 	border-radius: 16px;
@@ -34,12 +39,16 @@ html {
 }
 
 .cont{
-	margin: 20px;
+	margin: 0 0 20px 30px; /*верх право низ лево*/
     box-shadow: 0 0 0 2px white, 0 0 13px #333; /* Параметры теней */
     vertical-align: middle;
     width: 70px;
     height: 70px;
     border-radius: 50%;
+}
+.user_foto{
+	float: left;
+	display: inline-block;
 }
 
 
@@ -91,21 +100,27 @@ html {
 	margin-left:12%;
 	margin-right:12%;
 	margin-top:3%;
-	font-family:ChinaCyr;
-	font-size:36;
+	font-family:Segoe Print;
+	font-size:32pt;
 	background-color:rgba(119, 42, 250,0.2);
 	padding:20px; 
+	height: auto;
  }
 
  .blogname{
  	display: inline-block;
- 	font-size:35;
- 	margin-right: 55%;
+ 	font-size:24pt;	
+ 	float:left;
+ 	margin-left: 30px;
+
  }
 
  .blogdate{
  	display: inline-block;
- 	font-size:35;
+ 	color: rgba(255, 255, 255, 0.5);
+ 	font-size:20pt;
+ 	float: right;
+ 	
  }
 
  .tp{
@@ -121,8 +136,8 @@ html {
 	line-height: 1.6;
 	display: inline-block;
 	vertical-align: top;
-	width:35%;
-	height:60%;
+	width:80%;
+	height:auto;
 
 }
 
@@ -143,9 +158,8 @@ html {
 }
 
 .blogfoto{
-	margin: 1% 4% auto -3%; /*верх право низ лево*/
-	background-color:rgba(87, 35, 176,0.1); 
-	display: inline-block;
+	margin: 5% auto 0 auto; /*верх право низ лево*/
+	/*background-color:rgba(87, 35, 176,0.1);*/ 
 	vertical-align: top;
 	height:60%;
 	width:60%;
@@ -154,6 +168,7 @@ html {
 .blogfoto img{
 	height: 90%;
 	width:auto;
+	/*flex-shrink: 0;*/
 	margin-top: 3%;
 	position:relative;
 	display: inline-block;
@@ -188,6 +203,7 @@ html {
  }
 .blogtext{
 	font-size:12;
+	margin-bottom: 1%
 	margin-left:0%;
 	margin-right:0%;
 	padding: 0 0 0 0;
