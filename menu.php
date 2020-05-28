@@ -28,14 +28,15 @@
      <li class="nav-item active">
         <a class="nav-link" href=<?echo 'profile.php?id='.$_COOKIE['id_user'];?>><?echo $_COOKIE['name'];?> <span class="sr-only">(current)</span></a>
      </li>
-     <li class="nav-item active">
-        <a class="nav-link" href="exit.php">Выход<span class="sr-only">(current)</span></a>
-     </li>
+    
      <? if ($_COOKIE['status']>1):?>
              <li class="nav-item active">
              <a class="nav-link" href="moderation.php">Модерация<span class="sr-only">(current)</span></a>
              </li>
        <?endif;?>
+     <li class="nav-item active">
+        <a class="nav-link" href="exit.php">Выход<span class="sr-only">(current)</span></a>
+     </li>
      <?endif;?>
      </ul>
 </nav>
