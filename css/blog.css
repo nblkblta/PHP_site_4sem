@@ -100,7 +100,7 @@ html {
 	margin-left:12%;
 	margin-right:12%;
 	margin-top:3%;
-	font-family:ChinaCyr;
+	font-family:Segoe Print;
 	font-size:32pt;
 	background-color:rgba(119, 42, 250,0.2);
 	padding:20px; 
@@ -117,6 +117,7 @@ html {
 
  .blogdate{
  	display: inline-block;
+ 	color: rgba(255, 255, 255, 0.5);
  	font-size:20pt;
  	float: right;
  	
