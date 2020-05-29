@@ -17,7 +17,6 @@ while(($row=$result->fetch_assoc())!=false):
 		<img  class="cont" src=<?echo $r['avatar'];?>>
 		</div>
 	<p class="zagolovok"><div class='blogname'>
-			
 			<?echo $r['name'];?>
 		</div>
 		 </p>	
@@ -28,6 +27,7 @@ while(($row=$result->fetch_assoc())!=false):
 	<? if(($row['name'] == $_COOKIE['name'])||($_COOKIE['status']>1)): ?>
 		<form style="display: inline-block;margin-left: 80%; margin-top: 2%;" name="red" action="redact_comment.php"  method="post">
 		<input type="hidden" name="id_post" value=<?echo $id_post ?>>
+		<input type="hidden" name="text" value=<?echo $row['text'];?>>
   		<input type="hidden" name="id" value=<?echo $row['id'] ?>>
 		<button class="but1" type="submit"> Редактировать</button>
 		</form>
