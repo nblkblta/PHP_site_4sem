@@ -9,7 +9,7 @@
 	$lastname = $res['lastname'];
 	$birthday = $res['birthday'];
 	$avatar = $res['avatar'];
-	$res=$mysql->query("SELECT COUNT(*) FROM `posts` WHERE `posts`.`id_user`='$id'")->fetch_assoc();
+	$res=$mysql->query("SELECT COUNT(*) FROM `posts` WHERE `posts`.`id_user`='$id' AND `posts`.`status`='1'")->fetch_assoc();
 	$stat_count=$res['COUNT(*)'];
 	$res=$mysql->query("SELECT COUNT(*) FROM `comments` WHERE `comments`.`id_user`='$id'")->fetch_assoc();
 	$comm_count=$res['COUNT(*)'];
