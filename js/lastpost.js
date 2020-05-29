@@ -17,4 +17,4 @@ var request = new XMLHttpRequest();
 	}
 	request.open('GET','get_lastposts.php');
 	request.send();}
-	, 2000);
+	, 30000);

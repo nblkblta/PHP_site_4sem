@@ -49,6 +49,7 @@ html {
 .user_foto{
 	float: left;
 	display: inline-block;
+
 }
 
 
@@ -159,10 +160,12 @@ html {
 
 .blogfoto{
 	margin: 5% auto 0 auto; /*верх право низ лево*/
+	padding: 1% 1% 1% 1%;
 	/*background-color:rgba(87, 35, 176,0.1);*/ 
 	vertical-align: top;
 	height:60%;
-	width:60%;
+	width:80%;
+	overflow-x: hidden;
 }
 
 .blogfoto img{
