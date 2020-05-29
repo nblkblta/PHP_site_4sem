@@ -43,7 +43,7 @@
 	</div>
 	<?echo "<br/>";?>
 	<?if (isset($_COOKIE['name'])):?>
-		<form name="reg" >	
+		<form name="reg" id='reg'>	
 			<input type="hidden" name="id_post" id='id_post"' value=<?echo $_GET['id'] ?>>
 			<input type="textarea" class="form-control" name="text"  placeholder="Введите текст"></input><br />	
 			<input type=button class="but" id="send" value="Добавить комментарий"></input>

@@ -7,6 +7,7 @@ window.onload = function(){
 			document.querySelector('#comments').innerHTML = request.responseText;
 		}
 	}
+
 	request.open('GET','get_comments.php?id_post='+inp_id_post.value);
 	request.send();
 	var inp_text = document.querySelector('input[name=text]');
@@ -32,6 +33,8 @@ function ajaxPost(params){
 	request.onreadystatechange = function(){
 		if(request.readyState == 4) {
 			document.querySelector('#message').innerHTML = request.responseText;
+			var form = document.querySelector('#reg');
+			form.reset();
 		}
 	}
 	request.open('POST','add_comm.php');
